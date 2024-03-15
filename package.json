@@ -1,0 +1,34 @@
+{
+  "name": "passportjs-local-auth",
+  "version": "1.0.0",
+  "description": "A Demo Implementation of Authentication using Passport JS Local Auth Strategy in an Express API Server.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch-path=./src --env-file=.env src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arijitcodes/passportjs-local-auth.git"
+  },
+  "keywords": [
+    "passportjs",
+    "passport local auth",
+    "passportjs local auth"
+  ],
+  "author": "Arijit Banerjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arijitcodes/passportjs-local-auth/issues"
+  },
+  "homepage": "https://github.com/arijitcodes/passportjs-local-auth#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.3",
+    "express-session": "^1.18.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.2.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
