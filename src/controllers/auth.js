@@ -42,7 +42,7 @@ const register = async (req, res, next) => {
       // throw new createHttpError.BadRequest(JSON.stringify(errors));
       return next(new createHttpError.BadRequest(JSON.stringify(errors)));
     }
-    throw new createHttpError.BadRequest("failed to create user");
+    return next(new createHttpError.BadRequest("failed to create user"));
   }
   /* User.create(req.body, (err, user) => {
     if (err) return res.status(500).json(err);
